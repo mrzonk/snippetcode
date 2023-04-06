@@ -5,10 +5,7 @@ import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-/**
- *
- * @author Rahul Ramadani
- */
+
 public class koneksi {
     private static Connection koneksi;
     
@@ -16,7 +13,7 @@ public class koneksi {
     public static Connection koneksiDatabase(){
         if(koneksi==null){
             MysqlDataSource dataSource = new MysqlDataSource();
-            dataSource.setURL("jdbc:mysql://localhost/activ");
+            dataSource.setURL("jdbc:mysql://localhost/YOURDB");
             dataSource.setUser("root");
             dataSource.setPassword("");
             try{
